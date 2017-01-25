@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Jonathan S. Lee</title>
+    </head>
+    <meta name = "description" content = "A short blog about my life and my hobbies."
+    <body>
+        <img src="http://cliparts.co/cliparts/dT9/Kq9/dT9Kq9X6c.svg" alt="A placeholder profile picture" height = "100" width = "100">
+        <h1>Jonathan S. Lee</h1>
+        <div>
+            <table>
+                <thead>
+                    <h3>Magic Card Ratings</h3>
+                    <th>Card Name</th>
+                    <th>Constructed Rating</th>
+                    <th>Limited Rating</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Aethergeode Miner</td>
+                        <td>2.5</td>
+                        <td>3.5</td>
+                    </tr>
+                    <tr>
+                        <td>Decomission</td>
+                        <td>2.0</td>
+                        <td>2.0</td>
+                    </tr>
+                    <tr>
+                        <td>Thopter Arrest</td>
+                        <td>2.5</td>
+                        <td>3.5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <p>Some of my hobbies</p>
+            <ul>
+                <li>
+                    <a href="http://magic.wizards.com/en">I love Magic!</a>
+                </li>
+                <li>video games</li>
+                <li>guitar</li>
+                <li>painting miniatures</li>
+            </ul>
+        </div>
+        <form class="process.php" method="post">
+            <h4>Please take this short survey</h4>
+                <label for="email">Email: </label>
+                <input type="text" id = "email" name="email">
+            <div>
+                <label for="gender">Gender: </label>
+                <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other_gender">Other</option>
+                </select>
+            </div>
+            <div>
+                <p>Rate my blog design!</p>
+                <label for="rate1">1*</label>
+                <input type="radio" id = "rate1" name="1" value="1">
+                <label for="rate2">2*</label>
+                <input type="radio" id = "rate2" name="2" value="2">
+                <label for="rate3">3*</label>
+                <input type="radio" id = "rate3" name="3" value="3">
+                <label for="rate4">4*</label>
+                <input type="radio" id = "rate4" name="4" value="4">
+                <label for="rate5">5*</label>
+                <input type="radio" id = "rate5" name="5" value="5">
+            </div>
+            <div>
+                <p>How did you find me?</p>
+                <label for="facebook">Facebook</label>
+                <input type="checkbox" id = "facebook" name="source" value="facebook">
+                <label for="instagram">Instagram</label>
+                <input type="checkbox" name="source" value="instagram">
+                <label for="irl">IRL</label>
+                <input type="checkbox" name="source" value="irl">
+            </div>
+                <label for="feedback">Please leave any additional feedback: </label>
+                <textarea name="feedback"></textarea>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+    </body>
+</html>

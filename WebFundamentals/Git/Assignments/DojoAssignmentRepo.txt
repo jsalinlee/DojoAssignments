@@ -1,0 +1,11 @@
+>cd Desktop
+>cd DojoAssignments
+>git init
+>git add .
+>git commit -m "First commit. Added DojoAssignments and section folders"
+>git remote add origin https://github.com/jsalinlee/DojoAssignments.git
+>git push origin master
+>git status
+>git add .
+>git commit -m "Added readme.md to DojoAssignments"
+>git push origin master

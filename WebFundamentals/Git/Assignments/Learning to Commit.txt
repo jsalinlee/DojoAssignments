@@ -1,0 +1,19 @@
+>cd Desktop
+>md test
+>cd test
+>copy NUL index.html
+>copy NUL styles.css
+>copy NUL aboutMe.txt
+>git init
+>git status
+>git add .
+>git status
+>git commit -m "First commit. Added aboutMe.txt, index.html, and styles.css"
+>git add .
+>git commit -m "updated aboutMe"
+>git add .
+>git commit -m "added favorite movie to aboutMe"
+>git log
+>git revert e6beece
+>git add .
+>git commit -m "revert test"
