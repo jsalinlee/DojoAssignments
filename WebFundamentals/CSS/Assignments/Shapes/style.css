@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+}
+.square{
+    width: 140px;
+    height: 140px;
+    background: blue;
+}
+.circle{
+    width: 140px;
+    height: 140px;
+    background: blue;
+    border-radius: 50%;
+}
+.triangle{
+
+}
