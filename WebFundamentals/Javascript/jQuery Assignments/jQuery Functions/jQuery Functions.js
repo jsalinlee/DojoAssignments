@@ -1,0 +1,69 @@
+$(".hideFirst").hide();
+$("")
+$("h1").click(function(){
+    $("h2").slideToggle("slow", function(){});
+});
+$("#navListButton1").click(function(){
+    $("#navList1").toggle();
+});
+$("#navListButton2").click(function(){
+    $("#navList2").toggle();
+});
+$("#navListButton3").click(function(){
+    $("#navList3").toggle();
+});
+$("#navListButton4").click(function(){
+    $("#navList4").toggle();
+});
+$("#navListButton5").click(function(){
+    $("#navList5").toggle();
+});
+$("#notparagraph").click(function(){
+    $("p").hide();
+});
+$("#showparagraph").click(function(){
+    $("p").show();
+});
+$("#slideHideText").click(function(){
+    $("h6").slideUp();
+});
+$("#slideShowText").click(function(){
+    $("h6").slideDown();
+});
+$("#spookyShowText").click(function(){
+    $("h5").fadeIn();
+});
+$("#spookyHideText").click(function(){
+    $("h5").fadeOut();
+});
+$("#makeClassy").click(function(){
+    $("h4").addClass("classified");
+});
+$("#before").click(function(){
+    $("#textEditText").before("Rainbow");
+});
+$("#after").click(function(){
+    $("#textEditText").after("Dark");
+});
+$("#append").click(function(){
+    $("#textEditText").append("the");
+});
+$("#htmlChange").click(function(){
+    $("#textEditText").html("in");
+});
+$("#attr").click(function(){
+    var title = $("attrb").attr("attributes")
+    console.log(title);
+});
+$("#val").click(function(){
+    var valueVar = $("button").val();
+    console.log(valueVar);
+});
+$("#textFunk").click(function(){
+    var textFunktext = $(".textEdit").text();
+    console.log(textFunktext);
+});
+$("#dataFunk").click(function(){
+    $("h4").data("foo", 52);
+    console.log($("h4").data());
+});
