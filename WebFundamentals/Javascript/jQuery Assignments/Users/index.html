@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Users</title>
+        <meta name="Users" content="jQuery assignment for Coding Dojo">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="Users.js" defer></script>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email Address</th>
+                <th>Contact #</th>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <form class="add-user" action="process.php" method="post">
+            <h1>Add User</h1>
+            <label>First Name: <input type="text" id="first-name" value=""></label>
+            <label>Last Name: <input type="text" id="last-name" value=""></label>
+            <label>Email Address: <input type="text" id="email" value=""></label>
+            <label>Contact No.: <input type="text" id="contact-num" value=""></label>
+            <input type="submit" value="Add User">
+        </form>
+    </body>
+</html>

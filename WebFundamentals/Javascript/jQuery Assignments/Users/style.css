@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 10px;
+}
+label{
+    display: block;
+}
+table{
+    display: inline-block;
+}
+form{
+    display: inline-block;
+    vertical-align: top;
+}
