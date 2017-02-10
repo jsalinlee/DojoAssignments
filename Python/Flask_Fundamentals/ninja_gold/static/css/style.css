@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+}
+div{
+    padding: 5px;
+    border: 2px solid black;
+    display: inline-block;
+    text-align: center;
+}
+.your-gold{
+    height: 30px;
+    width: 150px;
+    padding: 5px;
+    display: block;
+    text-align: left;
+}
+.activities{
+    height: 300px;
+    width: 552px;
+    display: block;
+}
