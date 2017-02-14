@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.submit{
+    margin-left: 5px;
+}
+label{
+    padding: 5px;
+    display: block;
+}
+li{
+    margin-left: 25px;
+    color: red;
+}

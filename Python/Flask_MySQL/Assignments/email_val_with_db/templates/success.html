@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Validated email</title>
+    </head>
+    <body>
+        <h2>The email address you entered ({{data["email"]}}) is a VALID email address! Thank you!</h2>
+        <ul>
+            <h2>Email Addresses Entered</h2>
+            {% for email in all_emails: %}
+            <li>{{ email["email"] }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ email["created_at"] }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ email["updated_at"] }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, flash
 app = Flask(__name__)
 app.secret_key="floople"
 @app.route('/')
-def DojoSurvey():
+def index():
     return render_template("index.html")
 
 @app.route('/users', methods=['post'])

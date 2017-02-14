@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Disappearing Ninjas</title>
+    </head>
+    <body>
+        {% if ninja == "ninja" %}
+            <img src="{{ url_for('static', filename='img/tmnt.png') }}">
+        {% else %}
+            <h1>No Ninjas Here...</h1>
+        {% endif %}
+        </body>
+</html>

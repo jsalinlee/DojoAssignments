@@ -1,0 +1,73 @@
+# Query 1
+SELECT first_name, last_name, email, address
+FROM customer
+JOIN address ON address.address_id = customer.address_id
+JOIN city ON city.city_id = address.city_id
+WHERE city.city_id = 312;
+# Query 2
+SELECT title, description, release_year, rating, special_features, name as genre
+FROM film
+JOIN film_category ON film.film_id = film_category.film_id
+JOIN category ON film_category.category_id = category.category_id
+WHERE name = "Comedy";
+# Query 3
+SELECT title, description, release_year, first_name
+FROM film
+JOIN film_actor ON film.film_id = film_actor.film_id
+JOIN actor ON film_actor.actor_id = actor.actor_id
+WHERE actor.actor_id = 5;
+# Query 4
+SELECT first_name, last_name, email, address
+FROM customer
+JOIN address ON address.address_id = customer.address_id
+JOIN city ON city.city_id = address.city_id
+JOIN store ON customer.store_id = store.store_id
+WHERE store.store_id = 1 AND (city.city_id = 1 OR city.city_id = 42 OR city.city_id = 312 OR city.city_id = 459);
+# Query 5
+SELECT title, description, release_year, rating, special_features
+FROM film
+JOIN film_actor ON film.film_id = film_actor.film_id
+
+JOIN actor ON film_actor.actor_id = actor.actor_id
+
+WHERE rating = "G" AND actor.actor_id = 15 AND special_features LIKE "%scenes";
+
+# Query 6
+
+SELECT film.film_id, title, actor.actor_id, first_name, last_name
+
+FROM film
+
+JOIN film_actor ON film.film_id = film_actor.film_id
+
+JOIN actor ON film_actor.actor_id = actor.actor_id
+
+WHERE film.film_id = 369;
+
+# Query 7
+
+SELECT title, description, release_year, rating, special_features, name as genre
+
+FROM film
+
+JOIN film_category ON film.film_id = film_category.film_id
+
+JOIN category ON film_category.category_id = category.category_id
+
+WHERE rental_rate = 2.99 AND name = "Drama";
+
+# Query 8
+
+SELECT title, description, release_year, rating, special_features, name as genre, first_name, last_name
+
+FROM film
+
+JOIN film_category ON film.film_id = film_category.film_id
+
+JOIN category ON film_category.category_id = category.category_id
+
+JOIN film_actor ON film.film_id = film_actor.film_id
+
+JOIN actor ON film_actor.actor_id = actor.actor_id
+
+WHERE first_name = "Sandra" AND last_name = "Kilmer" AND name = "Action";
