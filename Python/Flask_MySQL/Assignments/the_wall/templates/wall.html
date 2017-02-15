@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Wall</title>
+  </head>
+  <body>
+    <h3>You are now logged in!</h3>
+    <form action = '/log_out'>
+      <input type = "submit" value = "Logout">
+    </form>
+    <form action="/postmessage" method="post">
+        <h1>The Wall</h1>
+        <textarea name="message" rows="8" cols="80"></textarea>
+        <input type="submit" name="post_message" value="Post message">
+    </form>
+    {% for i in range(0, posted_messages | length) %}
+
+        <h3>{{ posted_messages[i]["first_name"] }} {{ posted_messages[i]["last_name"] }},&nbsp;&nbsp;&nbsp;{{ posted_messages[i]["created_at"].strftime("%a %b-%m %Y %I:%M %p") }}</h3>
+        <h4>{{ posted_messages[i]["message"] }}</h4>
+
+        {% for k in range(0, posted_comments | length) %}
+            {% if posted_comments[k]["message_id"] == posted_messages[i]["id"] %}
+                <h6>{{ posted_comments[k]["first_name"]}}</h6>
+                <p>{{ posted_comments[k]["comment"] }}</p>
+                <h6>{{ posted_comments[k]["created_at"].strftime("%a %b-%m %Y %I:%M %p") }}</h6>
+            {% endif %}
+        {% endfor %}
+        <form action="/postcomment/{{ posted_messages[i]['id'] }}" method="post">
+            <textarea name="comment" rows="3" cols="50"></textarea>
+            <input type="submit" name="post_comment" value="Post comment">
+        </form>
+    {% endfor %}
+  </body>
+</html>
