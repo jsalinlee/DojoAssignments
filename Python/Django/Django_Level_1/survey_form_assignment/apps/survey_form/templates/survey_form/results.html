@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Survey Confirmation</title>
+        {% load staticfiles %}
+        <link rel="stylesheet" href="{% static 'css/stylesheet.css' %}">
+    </head>
+    <body>
+        <h3>Thanks for submitting this form! You have submitted this form {{ request.session.count }} time(s) now.</h3>
+        <h2>Submitted Information</h2>
+        <div class="fields">
+            <p>Name: </p>
+            <p>Dojo location: </p>
+            <p>Favorite language: </p>
+            <p>Comment: </p>
+        </div>
+        <div class="user-info">
+            <p>{{ request.session.name }}</p>
+            <p>{{ request.session.location }}</p>
+            <p>{{ request.session.language }}</p>
+            <p>{{ request.session.comment }}</p>
+        </div>
+    </body>
+</html>
