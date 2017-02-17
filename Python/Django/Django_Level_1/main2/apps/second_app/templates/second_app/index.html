@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        {% load staticfiles %}
+        <script src="{% static 'second_app/js/main.js' %}" charset="utf-8"></script>
+        <link rel="stylesheet" href="{% static 'css/skeleton.css' %}">
+        <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Hello World</h1>
+            {{email}} and {{name}}
+        </div>
+    </body>
+</html>
